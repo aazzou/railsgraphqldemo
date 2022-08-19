@@ -1,0 +1,20 @@
+default:
+  image: ruby:2.6.3
+
+variables:
+  RAILS_ENV: test
+
+cache:
+  paths:
+    - vendor/ruby
+
+before_script:
+  - ruby -v
+  - apt-get update -q && apt-get install nodejs -yqq
+  - gem install bundler --no-document
+  - bundle install --quiet -j $(nproc) --path vendor
+  - bundle exec rake db:create db:schema:load db:migrate
+
+test:
+  script:
+    - bundle exec rspec spec
