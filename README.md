@@ -3,7 +3,7 @@
 **Sample Rails - GraphQL - JWT demo**
 
  ```shell
- $ git clone https://gitlab.com/aazzou/graphqldemo.git
+ $ git clone https://github.com/aazzou/railsgraphqldemo
  $ cd graphqldemo
  $ bundle install
  $ bundle exec rake db:create
@@ -12,7 +12,7 @@
  $ bundle exec rspec
  $ bundle exec rails s
  ```
-A React frontend client for this API can be found at [https://gitlab.com/aazzou/reactgraphql](https://gitlab.com/aazzou/reactgraphql)
+A React frontend client for this API can be found at [https://github.com/aazzou/reactgraphqldemo](https://github.com/aazzou/reactgraphqldemo)
 
 **Query examples**
 
